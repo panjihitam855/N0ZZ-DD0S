@@ -19,4 +19,4 @@ elif c == "1":
     os.system("npm install threading")
     os.system("npm install string")
     os.system("git pull")
-    print("Done.")Enter
+    print("Done.")
