@@ -26,6 +26,7 @@ class bcolors:
 if os.name == 'nt':
     os.system("cls")
 else:
+    attem = 0
     os.system("clear")
     print(" ")                                  
 print("\033[31m            ©©      ©     ©© ©    © © © ©©   © © © ©©      \033[0m")
@@ -43,9 +44,9 @@ print("\033[1m                   —°0  please use wisely  0°—              
 print("\033[33m⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵\033[0m")      
 print("\033[32m======================================================================\033[0m")
 method="url")
-      <label for="username">
-       username = input('\033[33mEnter your username: \033[0m')
-       password = input('\033[94mEnter your password: \033[0m')
+      while attemps < 100:
+    username = input('\033[33mEnter your username: \033[0m')
+    password = input('\033[94mEnter your password: \033[0m')
 
     if username == 'k0l4pz' and password == 'k0l4pz':
         print('\033[32m***WELCOME TO ZONA ATTACK!!***\033[0m')
