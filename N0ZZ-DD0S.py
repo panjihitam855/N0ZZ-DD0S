@@ -43,9 +43,9 @@ print("\033[1m                   —°0  please use wisely  0°—              
 print("\033[33m⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵\033[0m")      
 print("\033[32m======================================================================\033[0m")
 def my_function():
-    print(&quot;Hello, World!&quot;)
-username = input('\033[33mEnter your username: \033[0m')
-password = input('\033[94mEnter your password: \033[0m')
+while True:
+        username = input('\033[33mEnter your username: \033[0m')
+        password = input('\033[94mEnter your password: \033[0m')
 
     if username == 'k0l4pz' and password == 'k0l4pz':
         print('\033[32m***WELCOME TO ZONA ATTACK!!***\033[0m')
