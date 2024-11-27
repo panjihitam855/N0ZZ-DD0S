@@ -8,20 +8,25 @@ import random
 import string
 import colorama
 
+# Colors
 class bcolors:
-    HEADER = '\033[95m'
-    OKBLUE = '\033[94m'
-    OKCYAN = '\033[96m'
-    OKGREEN = '\033[92m'
-    WARNING = '\033[93m'
-    ZA1 = '\033[31m'
-    ZA2 = '\033[32m'
-    ZA3 = '\033[33m'
-    FAIL = '\033[91m'
-    RESET = '\033[0m'
-    BOLD = '\033[1m'
-    UNDERLINE = '\033[4m'
-    ZH = '\033[97m'
+    HEADER = '\e[95m'
+    OKBLUE = '\e[94m'
+    OKCYAN = '\e[96m'
+    OKGREEN = '\e[92m'
+    WARNING = '\e[93m'
+    UNDERLINE = '\e[4m'
+    PURPLE = '\033[97m'
+    BOLD    = "\e[1m"
+    BLACK   = "\e[30m"
+    RED     = "\e[31m"
+    GREEN   = "\e[32m"
+    YELLOW  = "\e[33m"
+    BLUE    = "\e[34m"
+    MAGENTA = "\e[35m"
+    CYAN    = "\e[36m"
+    WHITE   = "\e[37m"
+ 
 
 if os.name == 'nt':
     os.system("cls")
@@ -88,8 +93,8 @@ class httpth1(threading.Thread):
                 randomized_url = url + "?" + genstr(random.randint(3, 10))
                 requests.get(randomized_url, headers=headers)
                 u += 1
-                print("[☀️] \033[34mNOZZ:  \033[32m " +str(u)+ "   \033[35mשלח את החבילה אל\033[36m   " +url+ "\033[0m" )
-                print("[☀️] \033[96mNOZZ:  \033[94m " +str(u)+ "   \033[91mשלח את החבילה אל\033[92m   " +url+ "\033[0m" )
+                print("[☀️] \e[34mNOZZ:  \e[32m " +str(u)+ "   \e[33mשלח את החבילה אל\e[36m   " +url+ "\e[0m" )
+                print("[☀️] \e[96mNOZZ:  \e[94m " +str(u)+ "   \e[91mשלח את החבילה אל\e[92m   " +url+ "\e[0m" )
             except requests.exceptions.ConnectionError:
                 print ("[Server might be down!]")
                 pass
