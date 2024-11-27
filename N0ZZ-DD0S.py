@@ -42,8 +42,10 @@ print("\033[33m                         design By: ZA'99                        
 print("\033[1m                   —°0  please use wisely  0°—                         \033[0m")    
 print("\033[33m⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵\033[0m")      
 print("\033[32m======================================================================\033[0m")
-username = input('\033[33mEnter your username: \033[0m')
-password = input('\033[94mEnter your password: \033[0m')
+def my_function():
+while insta.login(user, pass):
+       username = input('\033[33mEnter your username: \033[0m')
+       password = input('\033[94mEnter your password: \033[0m')
 
     if username == 'k0l4pz' and password == 'k0l4pz':
         print('\033[32m***WELCOME TO ZONA ATTACK!!***\033[0m')
