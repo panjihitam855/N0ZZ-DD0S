@@ -89,8 +89,7 @@ class httpth1(threading.Thread):
                 requests.get(randomized_url, headers=headers)
                 u += 1
                 print("[☀️] \033[96mNOZZ:  \033[94m " +str(u)+ "   \033[32mשלח את החבילה אל\033[96m   " +url+ "\033[0m" )
-                print("[☀️] \033[96mNOZZ:  \033[94m " +str(u)+ "   \033[91mשלח את החבילה אל\033[31m   " +url+ "\033[0m" )
-                
+                print("[☀️] \033[96mNOZZ:  \033[94m " +str(u)+ "   \033[91mשלח את החבילה אל\033[95m   " +url+ "\033[0m" )
             except requests.exceptions.ConnectionError:
                 print ("[Server might be down!]")
                 pass
