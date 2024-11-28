@@ -10,22 +10,22 @@ import colorama
 
 # Colors
 class bcolors:
-    HEADER = '\e[95m'
-    OKBLUE = '\e[94m'
-    OKCYAN = '\e[96m'
-    OKGREEN = '\e[92m'
-    WARNING = '\e[93m'
-    UNDERLINE = '\e[4m'
+    HEADER = '\033[95m'
+    OKBLUE = '\033[94m'
+    OKCYAN = '\033[96m'
+    OKGREEN = '\033[92m'
+    WARNING = '\033[93m'
+    UNDERLINE = '\033[4m'
     PURPLE = '\033[97m'
-    BOLD    = "\e[1m"
-    BLACK   = "\e[30m"
-    RED     = "\e[31m"
-    GREEN   = "\e[32m"
-    YELLOW  = "\e[33m"
-    BLUE    = "\e[34m"
-    MAGENTA = "\e[35m"
-    CYAN    = "\e[36m"
-    WHITE   = "\e[37m"
+    BOLD    = "\033[1m"
+    BLACK   = "\033[30m"
+    RED     = "\033[31m"
+    GREEN   = "\033[32m"
+    YELLOW  = "\033[33m"
+    BLUE    = "\033[34m"
+    MAGENTA = "\033[35m"
+    CYAN    = "\033[36m"
+    WHITE   = "\033[37m"
  
 
 if os.name == 'nt':
