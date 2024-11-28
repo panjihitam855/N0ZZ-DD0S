@@ -47,7 +47,6 @@ print("\033[33m                         design By: ZA'99                        
 print("\033[1m                   —°0  please use wisely  0°—                         \033[0m")    
 print("\033[33m⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵\033[0m")      
 print("\033[32m======================================================================\033[0m")
-# Password authentication function
 def authenticate():
     password = "fucklove"  # The password to access the tool
     user_password = getpass.getpass(prompt="\033[1;36mEnter the password to access the tool: \033[0m")
